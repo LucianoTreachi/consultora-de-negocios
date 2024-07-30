@@ -1,0 +1,92 @@
+/* VARIABLES */
+
+:root {
+  /* Fonts */
+  --title-font: 'Merriweather',
+    serif;
+  --global-font: 'Inter',
+    sans-serif;
+
+  /* Colors */
+  --white: #F8F5F8;
+  --black: #181818;
+  --color-1: #CC7C00;
+  --color-2: #FFBB54;
+  --color-3: #FF9800;
+  --color-4: #6A450E;
+  --body-background: #FFF8ED;
+
+  /* Box Shadow */
+  --box-shadow-1: 0px 8px 16px -3px rgba(100, 100, 100, 0.1);
+  --box-shadow-2: 0px 8px 16px -3px rgba(255, 123, 0, 0.3);
+
+  /* Transitions & Animations */
+  --transition: .4s;
+  --animation-fade-in: fade-in .4s backwards .2s;
+}
+
+/* GLOBAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  font-family: var(--global-font);
+  background-color: var(--body-background);
+  color: var(--black);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  color: inherit;
+}
+
+p {
+  font-size: 1.7rem;
+  line-height: 1.6em;
+  opacity: .85;
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-wrap: balance;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 340px) {
+  html {
+    font-size: 55%;
+  }
+}

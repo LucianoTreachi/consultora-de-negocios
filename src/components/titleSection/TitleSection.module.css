@@ -1,0 +1,18 @@
+.titleSection {
+  font-family: var(--title-font);
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 820px) {
+  .titleSection {
+    text-align: initial;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .titleSection {
+    font-size: 3.8rem;
+  }
+}

@@ -1,0 +1,107 @@
+.section {
+  padding: 10rem 4rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  max-width: 800px;
+  margin: 6rem auto 0;
+  position: relative;
+}
+
+.card {
+  padding: 4rem;
+  border-radius: 1.2rem;
+  background-color: rgba(255, 221, 171, 0.50);
+  box-shadow: var(--box-shadow-1);
+  display: none;
+}
+
+.card.active {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  animation: var(--animation-fade-in);
+}
+
+.boxImage {
+  border-radius: 1rem;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.boxImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardTitle1 {
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.cardTitle2 {
+  margin-top: .5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  opacity: .75;
+}
+
+.cardParagraph {
+  margin-top: 2.5rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.controls button {
+  background: transparent;
+  border: 2px solid var(--color-4);
+  border-radius: 1.2rem;
+}
+
+.controls button svg {
+  width: 50px;
+  height: 50px;
+  fill: var(--color-4);
+  cursor: pointer;
+}
+
+.testimonialQuoteImage {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 150px;
+  filter: opacity(20%);
+}
+
+@media screen and (max-width: 574px) {
+  .section {
+    padding: 8rem 2rem 4rem;
+  }
+
+  .row {
+    margin-top: 4rem;
+  }
+
+  .card {
+    padding: 4rem 2rem;
+  }
+
+  .controls button svg {
+    width: 40px;
+    height: 40px;
+  }
+}
