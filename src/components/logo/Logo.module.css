@@ -3,7 +3,8 @@
 }
 
 .logo img {
-  width: 50px;
+  width: 50%;
+  height: auto;
 }
 
 @media screen and (max-width: 574px) {
