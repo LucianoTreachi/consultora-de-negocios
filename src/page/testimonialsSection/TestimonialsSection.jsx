@@ -3,7 +3,7 @@ import { dataTestimonials } from "../../data/dataTestimonials";
 import TitleSection from "../../components/titleSection/TitleSection";
 import ChevronRightIcon from "../../icons/ChevronRightIcon";
 import ChevronLeftIcon from "../../icons/ChevronLeftIcon";
-import testimonialQuoteImage from "../../assets/testimonial-quote.png";
+import QuoteIcon from "../../icons/QuoteIcon";
 import styles from "./TestimonialsSection.module.css";
 
 export default function TestimonialsSection() {
@@ -37,12 +37,10 @@ export default function TestimonialsSection() {
               <h3 className={styles.cardTitle1}>{testimonial.title1}</h3>
               <h4 className={styles.cardTitle2}>{testimonial.title2}</h4>
               <p className={styles.cardParagraph}>{testimonial.paragraph}</p>
+
               {/* Quote */}
-              <img
-                className={styles.testimonialQuoteImage}
-                src={testimonialQuoteImage}
-                alt=""
-              />
+              <QuoteIcon className={styles.quoteIcon} />
+
               {/* Slide Controls */}
               <div className={styles.controls}>
                 <button

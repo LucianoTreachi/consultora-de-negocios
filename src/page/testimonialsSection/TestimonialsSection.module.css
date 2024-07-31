@@ -62,8 +62,8 @@
   display: flex;
   gap: 1rem;
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 4rem;
+  right: 2rem;
 }
 
 .controls button {
@@ -84,12 +84,12 @@
   cursor: pointer;
 }
 
-.testimonialQuoteImage {
+.quoteIcon {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  width: 150px;
-  filter: opacity(20%);
+  bottom: -2rem;
+  right: 0;
+  width: 200px;
+  filter: opacity(5%);
 }
 
 @media screen and (max-width: 574px) {
@@ -108,5 +108,11 @@
   .controls button svg {
     width: 40px;
     height: 40px;
+  }
+
+  .quoteIcon {
+    bottom: -1.5rem;
+    right: -0.5rem;
+    width: 150px;
   }
 }
