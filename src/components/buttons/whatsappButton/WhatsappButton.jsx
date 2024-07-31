@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import whatsappButtonImage from "../../../assets/whatsappButton.png";
-import styles from "./WhatsappButton.module.css";
+import WhatsAppIcon from "../../../icons/WhatsAppIcon";
+import styles from "./WhatsAppButton.module.css";
 
-export default function WhatsappButton() {
+export default function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
@@ -30,11 +30,7 @@ export default function WhatsappButton() {
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            className={styles.whatsappButtonImage}
-            src={whatsappButtonImage}
-            alt=""
-          />
+          <WhatsAppIcon className={styles.whatsAppIcon} />
         </a>
       )}
     </>

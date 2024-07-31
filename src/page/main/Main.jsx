@@ -1,4 +1,4 @@
-import WhatsappButton from "../../components/buttons/whatsappButton/WhatsappButton";
+import WhatsAppButton from "../../components/buttons/whatsAppButton/WhatsAppButton";
 
 import HeroSection from "../heroSection/HeroSection";
 import NumbersSection from "../numbersSection/NumbersSection";
@@ -13,7 +13,7 @@ import ContactSection from "../contactSection/ContactSection";
 export default function Main() {
   return (
     <main>
-      <WhatsappButton />
+      <WhatsAppButton />
       <HeroSection />
       <NumbersSection />
       <AboutSection />

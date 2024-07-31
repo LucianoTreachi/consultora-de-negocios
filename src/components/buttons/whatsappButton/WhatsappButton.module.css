@@ -1,14 +1,18 @@
-.whatsappButtonImage {
+.whatsAppIcon {
   position: fixed;
-  right: 1rem;
-  bottom: 2rem;
-  width: 7rem;
-  height: 7rem;
+  right: 4rem;
+  bottom: 4rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  background-color: #d4ffcb;
+  width: 70px;
+  height: 70px;
+  fill: #068d62;
   z-index: 2;
   transition: var(--transition);
 }
 
-.whatsappButtonImage:hover {
+.whatsAppIcon:hover {
   transform: translateY(-5px);
 }
 
@@ -17,8 +21,11 @@
 }
 
 @media screen and (max-width: 574px) {
-  .whatsappButtonImage {
-    width: 6rem;
-    height: 6rem;
+  .whatsAppIcon {
+    /* right: 2rem;
+    bottom: 2rem;
+    width: 60px;
+    height: 60px; */
+    display: none;
   }
 }
