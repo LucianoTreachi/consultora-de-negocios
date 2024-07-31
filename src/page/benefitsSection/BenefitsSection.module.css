@@ -33,8 +33,10 @@
   align-items: center;
 }
 
-.boxIcon img {
-  width: 35px;
+.boxIcon svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--color-4);
 }
 
 .cardTitle {

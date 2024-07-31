@@ -1,14 +1,14 @@
-import rocketSVG from "../assets/rocket.svg";
-import awardSVG from "../assets/award.svg";
-import ideaSVG from "../assets/idea.svg";
-import growthSVG from "../assets/growth.svg";
-import experienceSVG from "../assets/experience.svg";
-import computerSVG from "../assets/computer.svg";
+import RocketIcon from "../icons/RocketIcon";
+import AwardIcon from "../icons/AwardIcon";
+import LightbulbIcon from "../icons/LightbulbIcon";
+import GrowthIcon from "../icons/GrowthIcon";
+import ExperienceIcon from "../icons/ExperienceIcon";
+import TechnologyIcon from "../icons/TechnologyIcon";
 
 export const dataBenefits = [
   {
     id: "1",
-    icon: <img src={rocketSVG} alt="" />,
+    icon: <RocketIcon />,
     title: "Impacto",
     paragraph:
       "Te ayudaremos a desarrollar estrategias efectivas para el crecimiento de tu negocio.",
@@ -16,7 +16,7 @@ export const dataBenefits = [
 
   {
     id: "2",
-    icon: <img src={awardSVG} alt="" />,
+    icon: <AwardIcon />,
     title: "Competitividad",
     paragraph:
       "Te ayudaremos a adaptarte a los cambios y desafíos del entorno empresarial.",
@@ -24,14 +24,14 @@ export const dataBenefits = [
 
   {
     id: "3",
-    icon: <img src={ideaSVG} alt="" />,
+    icon: <LightbulbIcon />,
     title: "Optimización",
     paragraph: "Te ayudaremos a asignar tus recursos de manera más eficiente.",
   },
 
   {
     id: "4",
-    icon: <img src={growthSVG} alt="" />,
+    icon: <GrowthIcon />,
     title: "Crecimiento",
     paragraph:
       "Estableceremos un plan estratégico que te permitirá crecer de manera constante.",
@@ -39,7 +39,7 @@ export const dataBenefits = [
 
   {
     id: "5",
-    icon: <img src={experienceSVG} alt="" />,
+    icon: <ExperienceIcon />,
     title: "Experiencia",
     paragraph:
       "Te proporcionaremos soluciones adaptadas a tus necesidades específicas.",
@@ -47,7 +47,7 @@ export const dataBenefits = [
 
   {
     id: "6",
-    icon: <img src={computerSVG} alt="" />,
+    icon: <TechnologyIcon />,
     title: "Tecnología",
     paragraph:
       "Te proporcionaremos las herramientas necesarias para impulsar tu negocio.",
