@@ -1,7 +1,7 @@
 import { dataFaqs } from "../../data/dataFaqs";
 import TitleSection from "../../components/titleSection/TitleSection";
-import arrowIcon from "../../assets/arrow.svg";
 import styles from "./FaqsSection.module.css";
+import ChevronDownIcon from "../../icons/ChevronDownIcon";
 
 export default function FaqsSection() {
   return (
@@ -18,18 +18,13 @@ export default function FaqsSection() {
                 <details>
                   <summary className={styles.questionContainer}>
                     <h3 className={styles.question}>{faq.question}</h3>
-                    <img
-                      className={styles.questionIcon}
-                      src={arrowIcon}
-                      alt="Icono de flecha"
-                    />
+                    <ChevronDownIcon className={styles.questionIcon} />
                   </summary>
                   <div className={styles.answerContainer}>
                     <p className={styles.answer}>{faq.answer}</p>
                   </div>
                 </details>
               </div>
-              <div className={styles.col3}></div>
             </div>
           ))}
         </div>
