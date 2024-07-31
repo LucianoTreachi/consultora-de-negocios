@@ -17,7 +17,7 @@ export default function FaqsSection() {
               <div className={styles.col2}>
                 <details>
                   <summary className={styles.questionContainer}>
-                    <h4 className={styles.question}>{faq.question}</h4>
+                    <h3 className={styles.question}>{faq.question}</h3>
                     <img
                       className={styles.questionIcon}
                       src={arrowIcon}

@@ -32,8 +32,8 @@ export default function TestimonialsSection() {
               <div className={styles.boxImage}>
                 <img src={testimonial.image} alt="" loading="lazy" />
               </div>
-              <h4 className={styles.cardTitle1}>{testimonial.title1}</h4>
-              <h5 className={styles.cardTitle2}>{testimonial.title2}</h5>
+              <h3 className={styles.cardTitle1}>{testimonial.title1}</h3>
+              <h4 className={styles.cardTitle2}>{testimonial.title2}</h4>
               <p className={styles.cardParagraph}>{testimonial.paragraph}</p>
               {/* Quote */}
               <img

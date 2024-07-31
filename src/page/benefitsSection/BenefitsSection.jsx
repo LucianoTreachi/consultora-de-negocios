@@ -11,7 +11,7 @@ export default function BenefitsSection() {
           {dataBenefits.map((benefit) => (
             <div className={styles.card} key={benefit.id}>
               <div className={styles.boxIcon}>{benefit.icon}</div>
-              <h4 className={styles.cardTitle}>{benefit.title}</h4>
+              <h3 className={styles.cardTitle}>{benefit.title}</h3>
               <p className={styles.cardParagraph}>{benefit.paragraph}</p>
             </div>
           ))}

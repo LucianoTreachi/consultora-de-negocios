@@ -24,7 +24,7 @@ export default function ServicesSection() {
                 </Link>
               </div>
               <div className={styles.content}>
-                <h4 className={styles.title}>{service.title}</h4>
+                <h3 className={styles.title}>{service.title}</h3>
                 <Link className={styles.link} to={`/servicio/${service.url}`}>
                   Leer más
                 </Link>
