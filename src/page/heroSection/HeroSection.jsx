@@ -52,11 +52,11 @@ export default function HeroSection() {
           <picture>
             <source
               media="(max-width: 574px)"
-              srcSet="https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/w_500/v1722371808/consultora-de-negocios/heroImage_etkcle.png"
+              srcSet="https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/w_500/v1722464805/consultora-de-negocios/hero_ptmd5i.png"
             />
             <img
               className={styles.image}
-              src="https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/v1722371808/consultora-de-negocios/heroImage_etkcle.png"
+              src="https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/v1722464805/consultora-de-negocios/hero_ptmd5i.png"
               alt="Emmanuel Mansilla mirando al frente, sonriendo, con los brazos cruzados."
               width={1000}
               height={1315}
