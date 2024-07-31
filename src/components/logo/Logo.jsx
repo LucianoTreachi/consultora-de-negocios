@@ -1,4 +1,4 @@
-import logo from "../../../public/logo.png";
+import logo from "/logo.png";
 import styles from "./Logo.module.css";
 
 export default function Logo() {
