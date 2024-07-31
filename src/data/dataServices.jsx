@@ -4,6 +4,8 @@ export const dataServices = [
     title: "Capacitaciones Grupales",
     image:
       "https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/v1698069574/consultora-de-negocios/service1_fpghpo.jpg",
+    image500:
+      "https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/w_500/v1698069574/consultora-de-negocios/service1_fpghpo.jpg",
     alt: "Emmanuel Mansilla dando capacitaciones grupales.",
     paragraph: (
       <>
@@ -23,6 +25,8 @@ export const dataServices = [
     title: "Asesoramiento Emprendedor",
     image:
       "https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/v1698069574/consultora-de-negocios/service2_jpvmjz.jpg",
+    image500:
+      "https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/w_500/v1698069574/consultora-de-negocios/service2_jpvmjz.jpg",
     alt: "Emmanuel Mansilla rodeado de muchos emprendedores.",
     paragraph: (
       <>
@@ -41,6 +45,8 @@ export const dataServices = [
     title: "Diagnóstico y Plan de Acción",
     image:
       "https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/v1698069574/consultora-de-negocios/service3_i8xzwy.jpg",
+    image500:
+      "https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/w_500/v1698069574/consultora-de-negocios/service3_i8xzwy.jpg",
     alt: "Emmanuel Mansilla rodeado de muchos emprendedores sobre un escenario.",
     paragraph: (
       <>

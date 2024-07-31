@@ -13,14 +13,20 @@ export default function ServicesSection() {
             <div className={styles.card} key={service.url}>
               <div>
                 <Link to={`/servicio/${service.url}`}>
-                  <img
-                    className={styles.image}
-                    src={service.image}
-                    alt={service.alt}
-                    width={963}
-                    height={583}
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 574px)"
+                      srcSet={service.image500}
+                    />
+                    <img
+                      className={styles.image}
+                      src={service.image}
+                      alt={service.alt}
+                      width={963}
+                      height={583}
+                      loading="lazy"
+                    />
+                  </picture>
                 </Link>
               </div>
               <div className={styles.content}>
