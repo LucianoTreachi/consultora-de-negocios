@@ -1,4 +1,3 @@
-import SubTitleSection from "../../components/subtitleSection/SubTitleSection";
 import TitleSection from "../../components/titleSection/TitleSection";
 import styles from "./ContactSection.module.css";
 
@@ -6,7 +5,6 @@ export default function ContactSection() {
   return (
     <section className={styles.section} id="contacto">
       <div className={styles.container}>
-        <SubTitleSection content="Estamos para Ayudarte" />
         <TitleSection content="Contactanos" />
         <div className={styles.row}>
           <div className={styles.col1}>

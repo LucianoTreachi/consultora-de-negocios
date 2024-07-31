@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { dataTestimonials } from "../../data/dataTestimonials";
-import SubTitleSection from "../../components/subtitleSection/SubTitleSection";
 import TitleSection from "../../components/titleSection/TitleSection";
 import testimonialQuoteImage from "../../assets/testimonial-quote.png";
 import styles from "./TestimonialsSection.module.css";
@@ -21,7 +20,6 @@ export default function TestimonialsSection() {
   return (
     <section className={styles.section} id="testimonios">
       <div className={styles.container}>
-        <SubTitleSection content="Testimonios" />
         <TitleSection content="Historias de satisfacción" />
         <div className={styles.row}>
           {dataTestimonials.map((testimonial, index) => (

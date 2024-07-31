@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { dataServices } from "../../data/dataServices";
-import SubTitleSection from "../../components/subtitleSection/SubTitleSection";
 import TitleSection from "../../components/titleSection/TitleSection";
 import styles from "./ServicesSection.module.css";
 
@@ -8,7 +7,6 @@ export default function ServicesSection() {
   return (
     <section className={styles.section} id="servicios">
       <div className={styles.container}>
-        <SubTitleSection content="Soluciones a tu alcance" />
         <TitleSection content="Nuestros servicios" />
         <div className={styles.row}>
           {dataServices.map((service) => (

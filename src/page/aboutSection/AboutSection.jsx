@@ -1,4 +1,3 @@
-import SubTitleSection from "../../components/subtitleSection/SubTitleSection";
 import TitleSection from "../../components/titleSection/TitleSection";
 import styles from "./AboutSection.module.css";
 
@@ -6,8 +5,7 @@ export default function AboutSection() {
   return (
     <section className={styles.section} id="sobre-mi">
       <div className={styles.container}>
-        <SubTitleSection content="Mi camino profesional" />
-        <TitleSection content="Quién Soy" />
+        <TitleSection content="Mi camino profesional" />
         <div className={styles.row}>
           <div className={styles.col1}>
             <picture>

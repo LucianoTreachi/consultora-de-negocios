@@ -1,5 +1,4 @@
 import { dataFaqs } from "../../data/dataFaqs";
-import SubTitleSection from "../../components/subtitleSection/SubTitleSection";
 import TitleSection from "../../components/titleSection/TitleSection";
 import arrowIcon from "../../assets/arrow.svg";
 import styles from "./FaqsSection.module.css";
@@ -8,7 +7,6 @@ export default function FaqsSection() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <SubTitleSection content="Resolvemos tus dudas" />
         <TitleSection content="Preguntas Frecuentes" />
         <div className={styles.row}>
           {dataFaqs.map((faq) => (

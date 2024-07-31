@@ -1,5 +1,4 @@
 import { dataBenefits } from "../../data/dataBenefits";
-import SubTitleSection from "../../components/subtitleSection/SubTitleSection";
 import TitleSection from "../../components/titleSection/TitleSection";
 import styles from "./BenefitsSection.module.css";
 
@@ -7,7 +6,6 @@ export default function BenefitsSection() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <SubTitleSection content="Hacemos la diferencia" />
         <TitleSection content="Beneficios de elegirnos" />
         <div className={styles.row}>
           {dataBenefits.map((benefit) => (
