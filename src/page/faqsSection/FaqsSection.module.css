@@ -39,7 +39,6 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .question {
@@ -47,6 +46,7 @@
   font-weight: 600;
   opacity: 0.85;
   line-height: 1.4em;
+  max-width: 90%;
 }
 
 .questionIcon {
@@ -71,6 +71,10 @@ details[open] .questionIcon {
   .col1 {
     display: none;
   }
+
+  .col2 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 574px) {
@@ -82,7 +86,11 @@ details[open] .questionIcon {
     margin-top: 4rem;
   }
 
-  .col2 {
-    width: 100%;
+  .question {
+    font-size: 1.8rem;
+  }
+
+  .answer {
+    max-width: 85%;
   }
 }
