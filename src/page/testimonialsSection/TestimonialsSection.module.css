@@ -58,6 +58,14 @@
   margin-top: 2.5rem;
 }
 
+.quoteIcon {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  width: 200px;
+  filter: opacity(5%);
+}
+
 .controls {
   display: flex;
   gap: 1rem;
@@ -84,12 +92,27 @@
   cursor: pointer;
 }
 
-.quoteIcon {
+.indicatorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  bottom: -2rem;
-  right: 0;
-  width: 200px;
-  filter: opacity(5%);
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; 
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: var(--color-4); 
 }
 
 @media screen and (max-width: 574px) {

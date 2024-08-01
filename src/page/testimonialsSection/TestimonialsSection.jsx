@@ -38,7 +38,6 @@ export default function TestimonialsSection() {
               <h4 className={styles.cardTitle2}>{testimonial.title2}</h4>
               <p className={styles.cardParagraph}>{testimonial.paragraph}</p>
 
-              {/* Quote */}
               <QuoteIcon className={styles.quoteIcon} />
 
               {/* Slide Controls */}
@@ -55,6 +54,18 @@ export default function TestimonialsSection() {
                 >
                   <ChevronLeftIcon />
                 </button>
+                
+                {/* Dots indicators */}
+                <div className={styles.indicatorContainer}>
+                  {dataTestimonials.map((_, index) => (
+                    <span
+                      key={index}
+                      className={`${styles.indicator} ${
+                        index === currentTestimonial ? styles.active : ""
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           ))}
