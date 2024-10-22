@@ -4,7 +4,7 @@ import FocusTrap from "../../focusTrap/FocusTrap";
 
 export default function ModalStartNow({ closeModal }) {
   return (
-    <div className={styles.modalBackdrop}>
+    <div className={styles.modalBackdrop} onClick={closeModal}>
       <FocusTrap closeModal={closeModal}>
         <div className={styles.modalBox}>
           <button
