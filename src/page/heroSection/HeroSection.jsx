@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import ModalStartNow from "../../components/modals/modalStartNow/ModalStartNow";
 import ModalVideo from "../../components/modals/modalVideo/ModalVideo";
 import ArrowRight from "../../icons/ArrowRight";
@@ -8,12 +8,17 @@ export default function HeroSection() {
   const [modalStartNowVisible, setModalStartNowVisible] = useState(false);
   const [modalVideoVisible, setModalVideoVisible] = useState(false);
 
+  const startNowButtonRef = useRef(null);
+
   const openModalStartNow = () => {
     setModalStartNowVisible(true);
   };
 
   const closeModal = () => {
     setModalStartNowVisible(false);
+    if (startNowButtonRef.current) {
+      startNowButtonRef.current.focus();
+    }
   };
 
   const openModalVideo = () => {
@@ -37,6 +42,7 @@ export default function HeroSection() {
           </p>
           <div className={styles.containerButtons}>
             <button
+              ref={startNowButtonRef}
               className={styles.primaryButton}
               onClick={openModalStartNow}
             >
