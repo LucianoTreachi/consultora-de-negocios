@@ -55,7 +55,14 @@ export default function Header() {
 
         {/* Menu */}
         <div className={`${styles.menu} ${isOpen && styles.open}`}>
-          <CloseIcon className={styles.closeMenuIcon} onClick={toggleMenu} />
+          {/* Close Menu Button */}
+          <button
+            className={styles.closeMenuButton}
+            onClick={toggleMenu}
+            aria-label="Cerrar menú de navegación"
+          >
+            <CloseIcon />
+          </button>
 
           {/* Links */}
           <Link
@@ -84,8 +91,12 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Open Menu Icon */}
-        <button className={styles.buttonMenu} onClick={toggleMenu}>
+        {/* Open Menu Button */}
+        <button
+          className={styles.openMenuButton}
+          onClick={toggleMenu}
+          aria-label="Menú de navegación"
+        >
           MENU
         </button>
       </nav>
