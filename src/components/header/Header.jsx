@@ -54,10 +54,7 @@ export default function Header() {
         <Logo />
 
         {/* Menu */}
-        <div
-          className={`${styles.menu} ${isOpen && styles.open}`}
-          aria-hidden={!isOpen ? "true" : "false"}
-        >
+        <div className={`${styles.menu} ${isOpen && styles.open}`}>
           {/* Close Menu Button */}
           <button
             className={styles.closeMenuButton}
