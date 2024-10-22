@@ -22,7 +22,6 @@ export default function ContactSection() {
                   className={styles.input}
                   type="text"
                   id="name"
-                  placeholder="Ej: Pedro Gomez"
                   autoComplete="name"
                   required
                 />
@@ -35,7 +34,6 @@ export default function ContactSection() {
                   className={styles.input}
                   type="email"
                   id="email"
-                  placeholder="Ej: pedrogomez@gmail.com"
                   autoComplete="email"
                   required
                 />
@@ -48,7 +46,6 @@ export default function ContactSection() {
                   className={styles.input}
                   type="phone"
                   id="number"
-                  placeholder="Ej: 2616819562"
                   autoComplete="number"
                   required
                 />
@@ -60,7 +57,6 @@ export default function ContactSection() {
                 <textarea
                   className={styles.textarea}
                   id="textarea"
-                  placeholder="Escribe tu mensaje"
                   required
                 ></textarea>
               </div>
