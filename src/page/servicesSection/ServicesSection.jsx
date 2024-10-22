@@ -31,7 +31,11 @@ export default function ServicesSection() {
               </div>
               <div className={styles.content}>
                 <h3 className={styles.title}>{service.title}</h3>
-                <Link className={styles.link} to={`/servicio/${service.url}`}>
+                <Link
+                  className={styles.link}
+                  to={`/servicio/${service.url}`}
+                  aria-label={`Leer más sobre nuestro servicio ${service.title}`}
+                >
                   Leer más
                 </Link>
               </div>
