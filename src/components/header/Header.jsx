@@ -54,13 +54,15 @@ export default function Header() {
         <Logo />
 
         {/* Menu */}
-        <div className={`${styles.menu} ${isOpen && styles.open}`}>
+        <div
+          className={`${styles.menu} ${isOpen && styles.open}`}
+          aria-hidden={!isOpen ? "true" : "false"}
+        >
           {/* Close Menu Button */}
           <button
             className={styles.closeMenuButton}
             onClick={toggleMenu}
             aria-label="Cerrar menú de navegación"
-            tabIndex={isOpen ? "0" : "-1"}
           >
             <CloseIcon />
           </button>
@@ -69,28 +71,24 @@ export default function Header() {
           <Link
             className={styles.menuLink}
             onClick={() => scrollToSection("sobre-mi")}
-            tabIndex={isOpen ? "0" : "-1"}
           >
             Sobre mí
           </Link>
           <Link
             className={styles.menuLink}
             onClick={() => scrollToSection("servicios")}
-            tabIndex={isOpen ? "0" : "-1"}
           >
             Servicios
           </Link>
           <Link
             className={styles.menuLink}
             onClick={() => scrollToSection("testimonios")}
-            tabIndex={isOpen ? "0" : "-1"}
           >
             Testimonios
           </Link>
           <Link
             className={styles.menuLink}
             onClick={() => scrollToSection("contacto")}
-            tabIndex={isOpen ? "0" : "-1"}
           >
             Contacto
           </Link>
