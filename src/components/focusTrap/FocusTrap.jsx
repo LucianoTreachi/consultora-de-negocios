@@ -1,6 +1,6 @@
 import { useEffect, useRef, cloneElement } from "react";
 
-const FocusTrap = ({ children, closeModal }) => {
+export default function FocusTrap({ children, closeModal }) {
   const trapRef = useRef(null);
   const firstElementRef = useRef(null);
   const lastElementRef = useRef(null);
@@ -45,6 +45,4 @@ const FocusTrap = ({ children, closeModal }) => {
   }, [closeModal]);
 
   return cloneElement(children, { ref: trapRef, tabIndex: "-1" });
-};
-
-export default FocusTrap;
+}
