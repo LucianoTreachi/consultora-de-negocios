@@ -25,13 +25,18 @@
   position: relative;
 }
 
-.closeIcon {
+.closeModalButton {
+  border: none;
+  background: none;
   position: absolute;
   top: 1rem;
   right: 1rem;
+  cursor: pointer;
+}
+
+.closeModalButton svg {
   width: 40px;
   height: 40px;
-  cursor: pointer;
 }
 
 .modalContent {
