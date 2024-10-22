@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import LayoutRoutes from "./LayoutRoutes";
-import Main from "../page/main/Main";
-import ServiceDetail from "../page/serviceDetail/ServiceDetail";
-import Error404 from "../page/error404/Error404";
+import Home from "../pages/home/Home";
+import ServiceDetail from "../pages/serviceDetail/ServiceDetail";
+import Error404 from "../pages/error404/Error404";
 
 export default function AppRouter() {
   return (
     <Routes>
       <Route element={<LayoutRoutes />}>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Home />} />
       </Route>
 
       <Route path="/servicio/:url" element={<ServiceDetail />} />
