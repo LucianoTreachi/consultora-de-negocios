@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
               key={testimonial.id}
             >
               <div className={styles.boxImage}>
-                <img src={testimonial.image} alt="" loading="lazy" />
+                <img src={testimonial.image} alt="" />
               </div>
               <h3 className={styles.cardTitle1}>{testimonial.title1}</h3>
               <h4 className={styles.cardTitle2}>{testimonial.title2}</h4>
@@ -54,7 +54,7 @@ export default function TestimonialsSection() {
                 >
                   <ChevronLeftIcon />
                 </button>
-                
+
                 {/* Dots indicators */}
                 <div className={styles.indicatorContainer}>
                   {dataTestimonials.map((_, index) => (

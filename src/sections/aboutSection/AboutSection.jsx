@@ -18,7 +18,6 @@ export default function AboutSection() {
                 className={styles.image}
                 src="https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/v1722464197/consultora-de-negocios/about_goysqs.jpg"
                 alt="Emmanuel Mansilla en una oficina brindando asesoramiento"
-                loading="lazy"
               />
             </picture>
           </div>

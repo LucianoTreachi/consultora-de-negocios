@@ -24,7 +24,6 @@ export default function ServicesSection() {
                       alt={service.alt}
                       width={963}
                       height={583}
-                      loading="lazy"
                     />
                   </picture>
                 </Link>
