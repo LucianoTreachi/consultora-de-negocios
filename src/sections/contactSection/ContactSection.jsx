@@ -61,7 +61,11 @@ export default function ContactSection() {
                 ></textarea>
               </div>
               <div className={styles.containerButtons}>
-                <input className={styles.buttonSubmit} type="submit" />
+                <input
+                  className={styles.buttonSubmit}
+                  type="submit"
+                  value="Enviar consulta"
+                />
               </div>
             </form>
           </div>
