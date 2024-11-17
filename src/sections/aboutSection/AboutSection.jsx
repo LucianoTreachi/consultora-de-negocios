@@ -4,7 +4,7 @@ import styles from "./AboutSection.module.css";
 
 export default function AboutSection() {
   return (
-    <section className={styles.section} id="sobre-mi">
+    <section className={styles.section} id="sobre-mi" aria-label="Sobre mí">
       <div className={styles.container}>
         <TitleSection content="Mi camino profesional" />
         <div className={styles.row}>

@@ -5,7 +5,7 @@ import ChevronDownIcon from "../../icons/ChevronDownIcon";
 
 export default function FaqsSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} aria-label="Preguntas Frecuentes">
       <div className={styles.container}>
         <TitleSection content="Preguntas Frecuentes" />
         <div className={styles.row}>

@@ -30,7 +30,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} aria-label="Inicio">
       <div className={styles.container}>
         <div className={styles.col1}>
           <h1 className={styles.mainTitle}>

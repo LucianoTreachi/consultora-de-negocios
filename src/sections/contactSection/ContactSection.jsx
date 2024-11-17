@@ -8,7 +8,7 @@ import styles from "./ContactSection.module.css";
 
 export default function ContactSection() {
   return (
-    <section className={styles.section} id="contacto">
+    <section className={styles.section} id="contacto" aria-label="Contacto">
       <div className={styles.container}>
         <TitleSection content="Contactanos" />
         <div className={styles.row}>

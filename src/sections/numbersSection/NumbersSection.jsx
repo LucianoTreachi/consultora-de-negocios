@@ -2,7 +2,7 @@ import styles from "./NumbersSection.module.css";
 
 export default function NumbersSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} aria-label="Nuestros números">
       <div className={styles.container}>
         <div className={styles.box}>
           <h2>+200</h2>

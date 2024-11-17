@@ -5,7 +5,7 @@ import styles from "./ServicesSection.module.css";
 
 export default function ServicesSection() {
   return (
-    <section className={styles.section} id="servicios">
+    <section className={styles.section} id="servicios" aria-label="Servicios">
       <div className={styles.container}>
         <TitleSection content="Nuestros servicios" />
         <div className={styles.row}>

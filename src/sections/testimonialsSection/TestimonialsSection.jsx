@@ -20,7 +20,7 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className={styles.section} id="testimonios">
+    <section className={styles.section} id="testimonios" aria-label="Testimonios">
       <div className={styles.container}>
         <TitleSection content="Historias de satisfacción" />
         <div className={styles.row}>

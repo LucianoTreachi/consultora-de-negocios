@@ -4,7 +4,7 @@ import styles from "./BenefitsSection.module.css";
 
 export default function BenefitsSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} aria-label="Beneficios">
       <div className={styles.container}>
         <TitleSection content="Beneficios de elegirnos" />
         <div className={styles.row}>
