@@ -16,7 +16,7 @@ export default function FaqsSection() {
               </div>
               <div className={styles.col2}>
                 <details>
-                  <summary className={styles.questionContainer}>
+                  <summary className={styles.questionContainer} tabIndex={0}>
                     <h3 className={styles.question}>{faq.question}</h3>
                     <ChevronDownIcon className={styles.questionIcon} />
                   </summary>
