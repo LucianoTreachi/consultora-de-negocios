@@ -4,7 +4,7 @@ Junto a un equipo de trabajo, diseñamos y desarrollamos un sitio web para Emman
 
 ## Vista previa
 
-[![Captura del Sitio Web](https://i.postimg.cc/mgdXqb8S/website.jpg)](https://postimg.cc/SnMfYp0X)
+[![Captura del proyecto](https://i.postimg.cc/WzdBL0SD/preview.png)](https://postimg.cc/q6db2hP0)
 
 ## Características
 
