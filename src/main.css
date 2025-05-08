@@ -62,7 +62,7 @@ button {
 
 p {
   font-size: 1.7rem;
-  line-height: 1.6em;
+  line-height: 1.6;
   opacity: .85;
   text-wrap: pretty;
 }
