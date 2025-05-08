@@ -15,7 +15,7 @@ export default function ServicesSection() {
                 <Link to={`/servicio/${service.url}`}>
                   <picture>
                     <source
-                      media="(max-width: 574px)"
+                      media="(max-width: 36rem)"
                       srcSet={service.image500}
                     />
                     <img

@@ -4,7 +4,7 @@
 }
 
 .container {
-  max-width: 800px;
+  max-width: 80rem;
   margin: auto;
 }
 
@@ -49,8 +49,8 @@
 }
 
 .arrow {
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   transition: var(--transition);
 }
 

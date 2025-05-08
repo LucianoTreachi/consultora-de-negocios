@@ -3,7 +3,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: auto;
 }
 
@@ -24,8 +24,8 @@
 
 .boxIcon {
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 7rem;
+  height: 7rem;
   background-color: rgba(255, 221, 171, 0.50);
   display: flex;
   justify-content: center;
@@ -33,8 +33,8 @@
 }
 
 .boxIcon svg {
-  width: 32px;
-  height: 32px;
+  width: 3.2rem;
+  height: 3.2rem;
   fill: var(--color-4);
 }
 

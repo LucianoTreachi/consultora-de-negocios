@@ -57,7 +57,7 @@ export default function HeroSection() {
         <div className={styles.col2}>
           <picture>
             <source
-              media="(max-width: 574px)"
+              media="(max-width: 36rem)"
               srcSet="https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/w_500/v1722464805/consultora-de-negocios/hero_ptmd5i.png"
             />
             <img
