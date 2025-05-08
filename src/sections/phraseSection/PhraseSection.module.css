@@ -24,13 +24,15 @@
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 820px) {
+/* 848px */
+@media (max-width: 53em) {
   .phrase {
     text-align: initial;
   }
 }
 
-@media screen and (max-width: 574px) {
+/* 576px */
+@media (max-width: 36em) {
   .section {
     padding: 8rem 2rem;
   }

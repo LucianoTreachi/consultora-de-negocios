@@ -5,13 +5,15 @@
   text-align: center;
 }
 
-@media screen and (max-width: 820px) {
+/* 848px */
+@media (max-width: 53em) {
   .titleSection {
     text-align: initial;
   }
 }
 
-@media screen and (max-width: 574px) {
+/* 576px */
+@media (max-width: 36em) {
   .titleSection {
     font-size: 3.8rem;
   }

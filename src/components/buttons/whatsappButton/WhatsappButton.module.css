@@ -20,7 +20,8 @@
   animation: var(--animation-fade-in);
 }
 
-@media screen and (max-width: 574px) {
+/* 576px */
+@media (max-width: 36em) {
   .whatsAppIcon {
     /* right: 2rem;
     bottom: 2rem;

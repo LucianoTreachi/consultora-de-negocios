@@ -48,7 +48,8 @@
   margin-top: 0.8rem;
 }
 
-@media screen and (max-width: 1024px) {
+/* 1024px */
+@media (max-width: 64em) {
   .row {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -59,7 +60,8 @@
   }
 }
 
-@media screen and (max-width: 574px) {
+/* 576px */
+@media (max-width: 36em) {
   .section {
     padding: 8rem 2rem 4rem;
   }

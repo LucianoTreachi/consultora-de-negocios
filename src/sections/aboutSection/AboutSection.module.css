@@ -63,7 +63,8 @@
   transform: translateX(5px);
 }
 
-@media screen and (max-width: 768px) {
+/* 768px */
+@media (max-width: 48em) {
   .row {
     grid-template-columns: 1fr;
     gap: 5rem;
@@ -78,7 +79,8 @@
   }
 }
 
-@media screen and (max-width: 574px) {
+/* 576px */
+@media (max-width: 36em) {
   .section {
     padding: 8rem 2rem;
   }

@@ -79,7 +79,8 @@
   transform: translateX(5px);
 }
 
-@media screen and (max-width: 574px) {
+/* 576px */
+@media (max-width: 36em) {
   .modalBox {
     padding: 4rem 2rem;
   }

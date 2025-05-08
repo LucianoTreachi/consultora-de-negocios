@@ -112,7 +112,8 @@
   fill: var(--color-4);
 }
 
-@media screen and (max-width: 820px) {
+/* 848px */
+@media (max-width: 53em) {
   .row {
     margin-top: 6rem;
     grid-template-columns: 1fr;
@@ -129,7 +130,8 @@
 
 }
 
-@media screen and (max-width: 574px) {
+/* 576px */
+@media (max-width: 36em) {
   .section {
     padding: 8rem 2rem 4rem;
   }

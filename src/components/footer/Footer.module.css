@@ -42,7 +42,8 @@
   height: 30px;
 }
 
-@media screen and (max-width: 800px) {
+/* 768px */
+@media (max-width: 48em) {
   .container {
     flex-direction: column;
     justify-content: initial;
@@ -51,7 +52,8 @@
   }
 }
 
-@media screen and (max-width: 574px) {
+/* 576px */
+@media (max-width: 36em) {
   .footer {
     padding: 4rem 2rem;
   }

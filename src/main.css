@@ -85,7 +85,8 @@ h5 {
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (max-width: 340px) {
+/* 340px */
+@media (max-width: 21.25em) {
   html {
     font-size: 55%;
   }

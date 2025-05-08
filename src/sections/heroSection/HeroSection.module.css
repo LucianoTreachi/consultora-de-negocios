@@ -99,7 +99,8 @@
   display: block;
 }
 
-@media screen and (max-width: 1024px) {
+/* 1024px */
+@media (max-width: 64em) {
   .mainTitle {
     font-size: 5rem;
   }
@@ -109,7 +110,8 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+/* 848px */
+@media (max-width: 53em) {
   .container {
     flex-direction: column;
     padding: 8rem 0 0;
@@ -131,7 +133,8 @@
   }
 }
 
-@media screen and (max-width: 574px) {
+/* 576px */
+@media (max-width: 36em) {
   .section {
     padding: 0 2rem 8rem;
   }

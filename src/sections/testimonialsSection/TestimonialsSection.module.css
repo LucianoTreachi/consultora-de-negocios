@@ -105,17 +105,18 @@
 .indicator {
   width: 10px;
   height: 10px;
-  background-color: #ccc; 
+  background-color: #ccc;
   border-radius: 50%;
   margin: 0 5px;
   transition: background-color 0.3s;
 }
 
 .indicator.active {
-  background-color: var(--color-4); 
+  background-color: var(--color-4);
 }
 
-@media screen and (max-width: 574px) {
+/* 576px */
+@media (max-width: 36em) {
   .section {
     padding: 8rem 2rem 4rem;
   }
