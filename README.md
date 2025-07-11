@@ -26,11 +26,9 @@ Junto a un equipo de trabajo, diseñamos y desarrollamos un sitio web para Emman
 
 ## Tecnologías Utilizadas
 
-- **Vite:** Herramienta de construcción rápida para proyectos modernos.
-
-- **React 18:** Biblioteca para construir interfaces de usuario interactivas.
-
-- **CSS Modules:** Técnica para manejar estilos de forma modular y encapsulada.
+- Vite
+- React 18
+- CSS Modules
 
 ## Explora el sitio web
 
