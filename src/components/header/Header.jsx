@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState, useCallback } from "react";
 import Logo from "../logo/Logo";
-import styles from "./Header.module.css";
 import CloseIcon from "../../icons/CloseIcon";
+import styles from "./Header.module.css";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,12 +50,9 @@ export default function Header() {
       }`}
     >
       <nav className={styles.nav}>
-        {/* Logo */}
         <Logo />
 
-        {/* Menu */}
         <div className={`${styles.menu} ${isOpen && styles.open}`}>
-          {/* Close Menu Button */}
           <button
             className={styles.closeMenuButton}
             onClick={toggleMenu}
@@ -64,7 +61,6 @@ export default function Header() {
             <CloseIcon />
           </button>
 
-          {/* Links */}
           <Link
             className={styles.menuLink}
             onClick={() => scrollToSection("sobre-mi")}
@@ -91,7 +87,6 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Open Menu Button */}
         <button
           className={styles.openMenuButton}
           onClick={toggleMenu}
@@ -102,7 +97,6 @@ export default function Header() {
         </button>
       </nav>
 
-      {/* Overlay */}
       <div
         className={`${styles.overlay} ${isOpen ? styles.open : ""}`}
         onClick={toggleMenu}
