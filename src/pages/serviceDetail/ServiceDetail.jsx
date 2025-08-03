@@ -2,10 +2,11 @@ import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import { dataServices } from "../../data/dataServices";
 import NavigateToTop from "../../routing/NavigateToTop";
-import GoBackButton from "../../components/goBackButton/GoBackButton";
+// import GoBackButton from "../../components/goBackButton/GoBackButton";
 import ArrowRight from "../../icons/ArrowRight";
 import Footer from "../../components/footer/Footer";
 import styles from "./ServiceDetail.module.css";
+import GoHomeLink from "../../components/goHomeLink/GoHomeLink";
 
 export default function ServiceDetail() {
   const { url } = useParams();
@@ -25,7 +26,7 @@ export default function ServiceDetail() {
         <section className={styles.section}>
           <NavigateToTop />
           <div className={styles.container}>
-            <GoBackButton />
+            <GoHomeLink />
             <h1 className={styles.title}>{serviceSelected.title}</h1>
 
             <div className={styles.paragraph}>{serviceSelected.paragraph}</div>
