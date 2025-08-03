@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import { dataServices } from "../../data/dataServices";
 import NavigateToTop from "../../routing/NavigateToTop";
@@ -9,8 +10,16 @@ export default function ServiceDetail() {
   const { url } = useParams();
   const serviceSelected = dataServices.find((service) => service.url === url);
 
+  if (!serviceSelected) return null;
+
   return (
     <>
+      {serviceSelected && (
+        <Helmet>
+          <title>{serviceSelected.title} | Por Emmanuel Mansilla</title>
+        </Helmet>
+      )}
+
       <main>
         <section className={styles.section}>
           <NavigateToTop />
