@@ -69,13 +69,13 @@
   opacity: .85;
 }
 
-.arrow {
+.button svg {
   width: 2rem;
   height: 2rem;
   transition: var(--transition);
 }
 
-.button:hover .arrow {
+.button:hover svg {
   transform: translateX(5px);
 }
 
