@@ -139,6 +139,11 @@
     padding: 0 2rem 8rem;
   }
 
+  .container {
+    padding: 4rem 0 0;
+    gap: 4rem;
+  }
+
   .mainTitle {
     font-size: 3.4rem;
   }
