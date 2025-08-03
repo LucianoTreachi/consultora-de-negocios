@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import ArrowLeft from "../../../icons/ArrowLeft";
+import ArrowLeft from "../../icons/ArrowLeft";
 import styles from "./GoBackButton.module.css";
 
 export default function GoBackButton() {

@@ -2,9 +2,9 @@ import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import { dataServices } from "../../data/dataServices";
 import NavigateToTop from "../../routing/NavigateToTop";
-import GoBackButton from "../../components/buttons/goBackButton/GoBackButton";
-import styles from "./ServiceDetail.module.css";
+import GoBackButton from "../../components/goBackButton/GoBackButton";
 import Footer from "../../components/footer/Footer";
+import styles from "./ServiceDetail.module.css";
 
 export default function ServiceDetail() {
   const { url } = useParams();

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import WhatsAppIcon from "../../../icons/WhatsAppIcon";
+import WhatsAppIcon from "../../icons/WhatsAppIcon";
 import styles from "./WhatsAppButton.module.css";
 
 export default function WhatsAppButton() {
