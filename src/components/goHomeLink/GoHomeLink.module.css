@@ -14,12 +14,12 @@
   opacity: .95;
 }
 
-.icon {
+.button svg {
   width: 2rem;
   height: 2rem;
   transition: var(--transition);
 }
 
-.button:hover .icon {
+.button:hover svg {
   transform: translateX(-5px);
 }

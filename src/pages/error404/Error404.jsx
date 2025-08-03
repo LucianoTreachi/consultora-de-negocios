@@ -1,11 +1,11 @@
-import GoHomeButton from "../../components/goHomeButton/GoHomeButton";
+import GoHomeLink from "../../components/goHomeLink/GoHomeLink";
 import styles from "./Error404.module.css";
 
 export default function Error404() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <GoHomeButton />
+        <GoHomeLink />
         <h2 className={styles.title}>
           Error, no hemos podido encontrar la página que buscas
         </h2>
