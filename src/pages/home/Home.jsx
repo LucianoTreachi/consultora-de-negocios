@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import HeroSection from "../../sections/heroSection/HeroSection";
 import NumbersSection from "../../sections/numbersSection/NumbersSection";
 import AboutSection from "../../sections/aboutSection/AboutSection";
@@ -10,16 +11,22 @@ import ContactSection from "../../sections/contactSection/ContactSection";
 
 export default function Home() {
   return (
-    <main>
-      <HeroSection />
-      <NumbersSection />
-      <AboutSection />
-      <PhraseSection />
-      <ServicesSection />
-      <BenefitsSection />
-      <TestimonialsSection />
-      <FaqsSection />
-      <ContactSection />
-    </main>
+    <>
+      <Helmet>
+        <title>Emmanuel Mansilla - Asesor de negocios</title>
+      </Helmet>
+
+      <main>
+        <HeroSection />
+        <NumbersSection />
+        <AboutSection />
+        <PhraseSection />
+        <ServicesSection />
+        <BenefitsSection />
+        <TestimonialsSection />
+        <FaqsSection />
+        <ContactSection />
+      </main>
+    </>
   );
 }
