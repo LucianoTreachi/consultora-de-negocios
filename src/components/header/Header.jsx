@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import Logo from "../logo/Logo";
 import CloseIcon from "../../icons/CloseIcon";
 import styles from "./Header.module.css";
@@ -7,15 +7,18 @@ import styles from "./Header.module.css";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isHeaderScrolled, setHeaderScrolled] = useState(false);
+  const firstLinkRef = useRef(null);
 
+  // Menu
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   const closeMenu = () => {
     setIsOpen(false);
   };
 
+  // Navigate to section
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -24,6 +27,7 @@ export default function Header() {
     closeMenu();
   };
 
+  // Scroll on the page
   const handleScroll = useCallback(() => {
     if (window.scrollY > 0) {
       setHeaderScrolled(true);
@@ -37,11 +41,20 @@ export default function Header() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [handleScroll]);
+
+  // Focus on the first link
+  useEffect(() => {
+    if (isOpen && firstLinkRef.current) {
+      const timeout = setTimeout(() => {
+        firstLinkRef.current?.focus();
+      }, 30);
+      return () => clearTimeout(timeout);
+    }
+  }, [isOpen]);
 
   return (
     <header
@@ -56,13 +69,14 @@ export default function Header() {
           <button
             className={styles.closeMenuButton}
             onClick={toggleMenu}
-            aria-label="Cerrar menú de navegación"
+            aria-label="Cerrar menú"
           >
             <CloseIcon />
           </button>
 
           <Link
             className={styles.menuLink}
+            ref={firstLinkRef}
             onClick={() => scrollToSection("sobre-mi")}
           >
             Sobre mí
@@ -90,10 +104,10 @@ export default function Header() {
         <button
           className={styles.openMenuButton}
           onClick={toggleMenu}
-          aria-label="Menú de navegación"
+          aria-label="Abrir menú"
           aria-expanded={isOpen}
         >
-          MENU
+          MENÚ
         </button>
       </nav>
 
