@@ -5,7 +5,6 @@ import CloseIcon from "../../icons/CloseIcon";
 import styles from "./Header.module.css";
 
 export default function Header() {
-  const [liveMessage, setLiveMessage] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [isHeaderScrolled, setHeaderScrolled] = useState(false);
   const firstLinkRef = useRef(null);
@@ -25,11 +24,15 @@ export default function Header() {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
 
-      // Announce the section title (screen readers only)
-      const sectionTitle =
-        section.querySelector("h1, h2, h3, h4, h5, h6")?.textContent || "";
-      if (sectionTitle) {
-        setLiveMessage(`Sección: ${sectionTitle}`);
+      const focusTarget =
+        section.querySelector("h1, h2, h3, h4, h5, h6") || section;
+
+      if (focusTarget) {
+        focusTarget.setAttribute("tabindex", "-1");
+
+        setTimeout(() => {
+          focusTarget.focus();
+        }, 1000);
       }
     }
     closeMenu();
@@ -123,19 +126,6 @@ export default function Header() {
         className={`${styles.overlay} ${isOpen ? styles.open : ""}`}
         onClick={toggleMenu}
       ></div>
-
-      {/* Screen readers only */}
-      <div
-        aria-live="assertive"
-        style={{
-          position: "absolute",
-          left: "-9999px",
-          height: 0,
-          overflow: "hidden",
-        }}
-      >
-        {liveMessage}
-      </div>
     </header>
   );
 }
