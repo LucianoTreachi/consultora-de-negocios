@@ -8,6 +8,7 @@ export default function Error404() {
       <Helmet>
         <title>Error, no hemos podido encontrar la página que buscas</title>
       </Helmet>
+
       <main>
         <section className={styles.section}>
           <div className={styles.container}>
