@@ -23,17 +23,6 @@ export default function Header() {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-
-      const focusTarget =
-        section.querySelector("h1, h2, h3, h4, h5, h6") || section;
-
-      if (focusTarget) {
-        focusTarget.setAttribute("tabindex", "-1");
-
-        setTimeout(() => {
-          focusTarget.focus();
-        }, 1000);
-      }
     }
     closeMenu();
   };
