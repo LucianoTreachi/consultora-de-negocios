@@ -126,8 +126,7 @@ export default function Header() {
 
       {/* Screen readers only */}
       <div
-        aria-live="polite"
-        aria-atomic="true"
+        aria-live="assertive"
         style={{
           position: "absolute",
           left: "-9999px",
